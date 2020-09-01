@@ -5,7 +5,7 @@ Home: https://github.com/nion-software/nionswift-usim
 
 Package license: GPLv3
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: A Nion Swift package to simulate a STEM microscope, scanner, and cameras
 
