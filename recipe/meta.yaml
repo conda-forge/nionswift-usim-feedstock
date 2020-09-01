@@ -1,18 +1,18 @@
 {% set name = "nionswift-usim" %}
-{% set version = "0.2.1" %}
+{% set version = "0.3.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: d797357c549a891cf0fec01023cd9d7ef28cc03e61008edbc249af9e114a13c6
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 76aa1e7145734a3d852844224bc733c3d9985a30ac2498d376ee19d1a8ba145b
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -28,11 +28,11 @@ test:
     - nionswift_plugin.usim.test
 
 about:
-  home: "https://github.com/nion-software/nionswift-usim"
+  home: https://github.com/nion-software/nionswift-usim
   license: GPLv3
   license_family: GPL3
   license_file: LICENSE
-  summary: "A Nion Swift package to simulate a STEM microscope, scanner, and cameras"
+  summary: A Nion Swift package to simulate a STEM microscope, scanner, and cameras
   dev_url: https://github.com/nion-software/nionswift-usim
 
 extra:
