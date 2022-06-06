@@ -20,7 +20,7 @@ requirements:
     - python >=3.8
   run:
     - python >=3.8
-    - nionswift-instrumentation >=0.20.1,<0.21.0
+    - nionswift-instrumentation >=0.20.5,<0.21.0
 
 test:
   imports:
