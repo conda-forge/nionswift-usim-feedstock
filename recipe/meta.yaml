@@ -1,6 +1,6 @@
 {% set python_min = "3.11" %}
 {% set name = "nionswift-usim" %}
-{% set version = "5.4.1" %}
+{% set version = "5.4.2" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: eb2287969b5f31e0d9a43946b961d4732ce735553ffa2f60bb983f2ec126d359
+  sha256: a95d0942c74f1700c316d66182734d5844efe5b261b150d8e70b83efa34a7b1e
 
 build:
   number: 0
